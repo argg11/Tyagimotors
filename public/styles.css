@@ -1,0 +1,33 @@
+body {
+    background-image: url('https://img.freepik.com/free-photo/photorealistic-view-off-road-vehicle-with-nature-terrain-weather-conditions_23-2151430137.jpg?t=st=1720472180~exp=1720475780~hmac=a4fd67d5c7de436da0ecf13bc5d9e08ecbf6318955ca63810b9f68f4e67b588f&w=740');
+    background-size: 1920px 1080px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Lora', serif;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* #firstName {
+    margin-top: 40px;
+  } */
