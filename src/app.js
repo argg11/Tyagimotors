@@ -42,10 +42,7 @@ try {
     })
 
         const detailsave = await custregister.save();
-        res.status(200);
-    
-        res.send("less gooo");
-    
+        res.status(200).json(detailsave); 
         
         
 } catch (err) {
