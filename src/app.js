@@ -32,9 +32,7 @@ res.render("index")
 app.post('/',async(req,res)=>{
     res.render("index")
 try {
-         if(!req.body.firstName){
-        res.send("THANKING YOU FOR VISITING");
-         }
+         
         const custregister = new Register({
         firstName: req.body.firstName,
         lastName:req.body.lastName
@@ -46,6 +44,7 @@ try {
         const detailsave = await custregister.save();
         res.status(200);
     
+        res.send("less gooo");
     
         
         
