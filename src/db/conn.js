@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 // const mongoUrl ="mongodb://localhost:27017/TyagiMotorReg"
 require('dotenv').config();
-const mongoUrl = process.env.mongodbDB_URL;
+const mongoUrl = process.env.MONGODB_URI;
 
 mongoose.connect(mongoUrl,{
     // useNewUrlParser: true,
