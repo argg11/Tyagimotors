@@ -42,7 +42,8 @@ try {
     })
 
         const detailsave = await custregister.save();
-        res.status(200).json(detailsave); 
+        console.log("data saved");
+        res.status(200); 
         
         
 } catch (err) {
