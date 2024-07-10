@@ -82,9 +82,17 @@
             color: #343a40;
             margin-bottom: 40px;
         }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
         .card {
             border: none;
-            transition: transform 0.2s;
+            margin-bottom: 30px;
+            transition: transform 0.5s;
+        }
+        .card-body {
+            padding: 20px;
         }
         .card:hover {
             transform: scale(1.05);
