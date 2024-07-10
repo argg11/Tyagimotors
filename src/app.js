@@ -25,12 +25,16 @@ app.use(express.urlencoded({extended:false}));
 
 app.get('/',(req,res)=>{
 
-res.render("index")
+    res.render("home")
 });
 
+app.get('/index',(req,res)=>{
 
-app.post('/',async(req,res)=>{
     res.render("index")
+});
+
+app.post('/index',async(req,res)=>{
+    res.render("home")
 try {
          
         const custregister = new Register({
@@ -43,7 +47,8 @@ try {
 
         const detailsave = await custregister.save();
         console.log("data saved");
-        res.status(200); 
+       
+        res.redirect('/home');
         
         
 } catch (err) {
