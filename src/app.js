@@ -34,7 +34,7 @@ app.get('/index',(req,res)=>{
 });
 
 app.post('/index',async(req,res)=>{
-    res.render("home")
+    // res.render("home")
 try {
          
         const custregister = new Register({
@@ -46,19 +46,14 @@ try {
     })
 
         const detailsave = await custregister.save();
-        console.log("data saved");
-       
-        res.redirect('/home');
-        
+        console.log("data saved");  
+        res.redirect("/Thanks")
         
 } catch (err) {
     console.log(err);
     
-}
-
-
-})
-
+}})
+app.get('/Thanks',(req,res)=>{res.render("Thanks")})
 
 app.listen(port,()=>{
     console.log(`server is running at port no. ${port}`);

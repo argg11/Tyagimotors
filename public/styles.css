@@ -26,8 +26,26 @@ body {
   .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
+    cursor: pointer;
   }
-  
+
+  #bck {
+    margin-left: 10%;
+    margin-top: -6%;
+    /* display: inline-block; */
+    cursor: pointer;
+  }
+
+  @media (max-width: 844px) {
+    #bck {
+      margin-left: 24%;
+        width: 20%;
+        padding: 4px;
+        font-size: 19px;
+        margin-top: -19%;
+        cursor: pointer;
+    }
+} 
   /* #firstName {
     margin-top: 40px;
   } */
